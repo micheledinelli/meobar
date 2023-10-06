@@ -1,6 +1,6 @@
 body {
   color: theme("colors.antiflash");
-  background-color: theme("colors.chineseb");
+  background-color: black;
 
   height: 100%;
   min-height: 100%;
