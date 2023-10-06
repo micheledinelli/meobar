@@ -2,7 +2,6 @@ import React from "react";
 import Typewriter from "typewriter-effect";
 import Meobar from "../assets/Meo_bar_27-03-2023_005_L.png";
 import Card from "./Card";
-import { AttentionSeeker, Bounce } from "react-awesome-reveal";
 
 const cards = [
   { name: "Drinks", src: Meobar, text: "Our drinks" },
@@ -58,20 +57,18 @@ export default function Hero() {
         </div>
         <div className="absolute bottom-5 flex text-center m-auto justify-center w-full ">
           <button className="m-auto">
-            <AttentionSeeker effect={"heartBeat"} triggerOnce delay={2000}>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                className="w-9 h-9"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M20.03 4.72a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 11.69l6.97-6.97a.75.75 0 011.06 0zm0 6a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 111.06-1.06L12 17.69l6.97-6.97a.75.75 0 011.06 0z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            </AttentionSeeker>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              className="w-9 h-9"
+            >
+              <path
+                fillRule="evenodd"
+                d="M20.03 4.72a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 11.69l6.97-6.97a.75.75 0 011.06 0zm0 6a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 111.06-1.06L12 17.69l6.97-6.97a.75.75 0 011.06 0z"
+                clipRule="evenodd"
+              />
+            </svg>
           </button>
         </div>
       </div>
