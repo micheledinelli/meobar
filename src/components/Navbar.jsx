@@ -1,6 +1,9 @@
 import { Disclosure } from "@headlessui/react";
 import DisclosureButton from "../components/buttons/DiscolosureButton";
 
+// imported nav data to ensure constant navigation paths
+import navData from "../constants/nav.json";
+
 export default function Navbar() {
   return (
     <Disclosure as="nav" className="bg-zinc-900 ">
@@ -13,27 +16,20 @@ export default function Navbar() {
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex my-auto items-center">
-                  <h1 className="text-gray-400 font-bold text-2xl">MeoBar</h1>
+                  <h1 className="text-gray-400 font-bold text-2xl">
+                    <a href={navData.root.path}>{navData.root.name}</a>
+                  </h1>
                 </div>
                 <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
-                  <a
-                    href="#"
-                    className="inline-flex text-xl items-center border-b-2 border-transparent px-1 pt-1  font-medium text-gray-500 hover:border-gray-300 hover:text-gray-400"
-                  >
-                    Drinks
-                  </a>
-                  <a
-                    href="#"
-                    className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-xl font-medium text-gray-500 hover:border-gray-300 hover:text-gray-400"
-                  >
-                    Tapas
-                  </a>
-                  <a
-                    href="#"
-                    className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-xl font-medium text-gray-500 hover:border-gray-300 hover:text-gray-400"
-                  >
-                    Reach us
-                  </a>
+                  {navData.pages.map((elem, i) => (
+                    <a
+                      key={i}
+                      href={elem.path}
+                      className="inline-flex text-xl items-center border-b-2 border-transparent px-1 pt-1  font-medium text-gray-500 hover:border-gray-300 hover:text-gray-400"
+                    >
+                      {elem.name}
+                    </a>
+                  ))}
                 </div>
               </div>
 
@@ -44,34 +40,16 @@ export default function Navbar() {
           </div>
           <Disclosure.Panel className="sm:hidden">
             <div className="space-y-1 pb-4 pt-2">
-              <Disclosure.Button
-                as="a"
-                href="#"
-                className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
-              >
-                Drinks
-              </Disclosure.Button>
-              <Disclosure.Button
-                as="a"
-                href="#"
-                className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
-              >
-                Tapas
-              </Disclosure.Button>
-              <Disclosure.Button
-                as="a"
-                href="#"
-                className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
-              >
-                Reach us
-              </Disclosure.Button>
-              <Disclosure.Button
-                as="a"
-                href="#"
-                className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
-              >
-                Calendar
-              </Disclosure.Button>
+              {navData.pages.map((elem, i) => (
+                <Disclosure.Button
+                  key={i}
+                  as="a"
+                  href={elem.path}
+                  className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
+                >
+                  {elem.name}
+                </Disclosure.Button>
+              ))}
             </div>
           </Disclosure.Panel>
         </>

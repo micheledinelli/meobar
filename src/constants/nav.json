@@ -1,0 +1,25 @@
+{
+  "root": {
+    "path": "/",
+    "name": "MeoBar"
+  },
+  "pages": [
+    {
+      "name": "Drinks",
+      "path": "/drinks"
+    },
+
+    {
+      "name": "Tapas",
+      "path": "/tapas"
+    },
+    {
+      "name": "Wines",
+      "path": "/wines"
+    },
+    {
+      "name": "Reach Us",
+      "path": "/reach-us"
+    }
+  ]
+}
