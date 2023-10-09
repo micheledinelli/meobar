@@ -11,7 +11,7 @@ export default function Map() {
   const [API_KEY] = useState(import.meta.env.VITE_SECRET_API_KEY);
 
   useEffect(() => {
-    if (map.current) return; // stops map from intializing more than once
+    if (map.current) return;
 
     map.current = new maplibregl.Map({
       container: mapContainer.current,
@@ -29,7 +29,7 @@ export default function Map() {
 
   return (
     <div class="relative w-full h-full">
-      <div ref={mapContainer} class="relative w-1/2 h-screen" />
+      <div ref={mapContainer} class="relative w-full h-full" />
     </div>
   );
 }

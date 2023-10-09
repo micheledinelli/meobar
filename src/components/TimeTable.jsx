@@ -3,7 +3,7 @@ import React from "react";
 export default function TimeTable() {
     return (
         <div>
-          <h1>HELLO WORLD</h1>
+          <h1>ORARIO DI APERTURA</h1>
         </div>
       );
 }
