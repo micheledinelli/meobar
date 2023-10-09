@@ -8,7 +8,7 @@ export default function Map() {
   const [lng] = useState(11.2963199);
   const [lat] = useState(44.7433668);
   const [zoom] = useState(12);
-  const [API_KEY] = useState('M4r1RetM8OPS8QzFOL1G');
+  const [API_KEY] = useState(import.meta.env.VITE_SECRET_API_KEY);
 
   useEffect(() => {
     if (map.current) return; // stops map from intializing more than once
@@ -29,7 +29,7 @@ export default function Map() {
 
   return (
     <div class="relative w-full h-full">
-      <div ref={mapContainer} class="relative w-1/2 h-screen bg-red-400" />
+      <div ref={mapContainer} class="relative w-1/2 h-screen" />
     </div>
   );
 }
