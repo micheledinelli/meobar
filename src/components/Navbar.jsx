@@ -3,6 +3,7 @@ import DisclosureButton from "../components/buttons/DiscolosureButton";
 
 // imported nav data to ensure constant navigation paths
 import navData from "../constants/nav.json";
+import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
   return (
@@ -22,13 +23,27 @@ export default function Navbar() {
                 </div>
                 <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
                   {navData.pages.map((elem, i) => (
-                    <a
-                      key={i}
-                      href={elem.path}
-                      className="inline-flex text-xl items-center border-b-2 border-transparent px-1 pt-1  font-medium text-gray-500 hover:border-gray-300 hover:text-gray-400"
+                    // <a
+                    //   key={i}
+                    //   href={elem.path}
+                    //   className="inline-flex text-xl items-center border-b-2 border-transparent px-1 pt-1  font-medium text-gray-500 hover:border-gray-300 hover:text-gray-400"
+                    // >
+                    <NavLink
+                      className="inline-flex text-xl items-center border-b-2 border-transparent px-1 pt-1 font-medium text-gray-500 hover:border-gray-300 hover:text-gray-400"
+                      to={elem.path}
+                      style={({ isActive, isPending }) => {
+                        return {
+                          color: isActive ? "white" : "",
+                          borderColor: isActive ? "rgb(209 213 219 / 1)" : "",
+                          // backgroundColor: isActive ? "white" : "",
+                          // borderRadius: isActive ? "2px" : "",
+                        };
+                      }}
+                      end
                     >
                       {elem.name}
-                    </a>
+                    </NavLink>
+                    // </a>
                   ))}
                 </div>
               </div>
