@@ -11,7 +11,7 @@ export default function Hero() {
         Meo Bar
       </h1>
       {/* <FlashingSvg /> */}
-      <img className="absolute overflow-hidden" src={Meobar} alt="" />
+      {/* <img className="absolute overflow-hidden" src={Meobar} alt="" /> */}
     </div>
   );
 }
