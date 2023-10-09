@@ -3,7 +3,7 @@ import SingleCardSection from "../cards/SingleCardSection";
 
 export default function CardSection() {
   return (
-    <div className="flex justify-center gap-5">
+    <div className="flex flex-col md:flex-row  justify-center items-center gap-y-3 gap-4 py-52 overflow-hidden">
       <SingleCardSection
         title="Drinks"
         description="Try our cocktails"
