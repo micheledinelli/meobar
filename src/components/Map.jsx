@@ -29,7 +29,7 @@ export default function Map() {
 
   return (
     <div class="relative w-full h-full">
-      <div ref={mapContainer} class="relative w-full h-full" />
+      <div ref={mapContainer} class="relative w-full h-1/2" />
     </div>
   );
 }
