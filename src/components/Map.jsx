@@ -28,8 +28,8 @@ export default function Map() {
   }, [API_KEY, lng, lat, zoom]);
 
   return (
-    <div class="relative w-full h-full">
-      <div ref={mapContainer} class="relative w-full h-1/2" />
+    <div class="md:relative w-full h-full bg-red-300">
+      <div ref={mapContainer} class="md:relative w-full h-full" />
     </div>
   );
 }
