@@ -1,9 +1,5 @@
 import React from "react";
 
-import { FiInstagram } from "react-icons/fi";
-import { AiOutlineMail } from "react-icons/ai";
-import { AiOutlineWhatsApp } from "react-icons/ai";
-
 export default function Footer() {
   const navigation = {
     main: [
@@ -14,7 +10,7 @@ export default function Footer() {
     social: [
       {
         name: "Facebook",
-        href: "#",
+        href: "https://www.facebook.com/profile.php?id=100089993019514",
         icon: (props) => (
           <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
             <path
@@ -27,7 +23,7 @@ export default function Footer() {
       },
       {
         name: "Instagram",
-        href: "#",
+        href: "https://www.instagram.com/_meobar_",
         icon: (props) => (
           <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
             <path
@@ -39,11 +35,22 @@ export default function Footer() {
         ),
       },
       {
-        name: "Twitter",
-        href: "#",
+        name: "Mail",
+        href: "mailto:meootti@gmail.com",
         icon: (props) => (
-          <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
-            <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            className="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+            />
           </svg>
         ),
       },
@@ -52,22 +59,7 @@ export default function Footer() {
 
   return (
     <footer className="bg-transparent">
-      <div className="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
-        <nav
-          className="-mb-6 columns-2 sm:flex sm:justify-center justify-center items-center sm:space-x-12"
-          aria-label="Footer"
-        >
-          {navigation.main.map((item) => (
-            <div key={item.name} className="pb-6 text-center">
-              <a
-                href={item.href}
-                className="text-sm leading-6 text-gray-600 hover:text-gray-400"
-              >
-                {item.name}
-              </a>
-            </div>
-          ))}
-        </nav>
+      <div className="mx-auto max-w-7xl overflow-hidden px-6 py-8 sm:py-24 lg:px-8">
         <div className="mt-10 flex justify-center space-x-10">
           {navigation.social.map((item) => (
             <a
@@ -81,12 +73,9 @@ export default function Footer() {
           ))}
         </div>
         <p className="mt-10 text-center text-xs leading-5 text-gray-500">
-          &copy; 2020 Your Company, Inc. All rights reserved.
+          &copy; 2023 Meobar All rights reserved.
         </p>
       </div>
     </footer>
   );
 }
-    
-
-
