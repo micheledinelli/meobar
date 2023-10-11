@@ -6,7 +6,7 @@ import navData from "../constants/nav.json";
 
 export default function Navbar() {
   return (
-    <Disclosure as="nav" className="bg-zinc-900 ">
+    <Disclosure as="nav" className="bg-zinc-900 md:overflow-hidden">
       {({ open }) => (
         <>
           <div className="mx-auto  px-2 sm:px-6 lg:px-8">

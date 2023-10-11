@@ -96,7 +96,7 @@ export default function ReachUs() {
       <div className="md: h-20" />
       <div className="h-full md:flex flex-row h-full">
         <div className="h-96 md:basis-2/3 p-10"> */}
-        <div className="h-screen w-screen md:flex md:flex-row">
+        <div className="h-screen w-screen md:flex md:flex-row md:overflow-hidden">
 
         
           <div className="h-screen overflow-hidden z-0 md:h-full md:w-1/2">
