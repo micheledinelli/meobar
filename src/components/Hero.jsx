@@ -14,9 +14,9 @@ export default function Hero() {
       slideRight();
     }, 3000);
   };
-  startAutoScroll();
+  // startAutoScroll();
   const stopAutoScroll = () => {
-    clearInterval(intervalId); // Fermiamo lo scrolling automatico
+    clearInterval(intervalId);
   };
   const slideLeft = () => {
     var slider = document.getElementById("slider");
@@ -43,8 +43,8 @@ export default function Hero() {
     };
   }, []);
   return (
-    <div className="flex justify-center flex-col items-center text-center h-screen relative overflow-hidden bg-cover">
-      <h1 className="font-bold text-gray-200 bg-black/40 px-2 rounded-md md:text-9xl text-2xl z-50">
+    <div className="flex justify-center flex-col items-center text-center h-screen relative overflow-hidden no-scroll bg-cover">
+      <h1 className="font-bold  text-gray-200 bg-black/40 px-2 rounded-md md:text-9xl text-2xl z-50">
         Meo Bar
       </h1>
       {/* <FlashingSvg /> */}
