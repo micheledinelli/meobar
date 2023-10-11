@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from "react";
-import Typewriter from "typewriter-effect";
 import Meobar from "../assets/meoBar.png";
 import hor1 from "../assets/hor1.jpg";
 import hor2 from "../assets/hor2.jpg";
 import hor3 from "../assets/hor3.jpg";
 import hor4 from "../assets/hor4.jpg";
-import FlashingSvg from "./svg/FlashingSvg";
 
 export default function Hero() {
   let intervalId;
