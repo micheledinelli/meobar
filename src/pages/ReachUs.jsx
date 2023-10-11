@@ -9,24 +9,25 @@ function openMaps(data1, data2){
 
 export default function ReachUs() {
   return (
-    <div class="md:overflow-hidden">
+    <div className="md:overflow-hidden">
       <Navbar />
-      <div class="md: bg-[url('src/assets/meoBar.png')] mx-auto h-80 overflow-hidden bg-cover bg-fixed bg-center bg-no-repeat shadow-lg">
+      <div className="md: bg-[url('src/assets/meoBar.png')] mx-auto h-80 overflow-hidden bg-cover bg-fixed bg-center bg-no-repeat shadow-lg">
       </div>
+      <div className="h-20 md:" />
       <div>
-        <div class="md:h-60 ">
-          <div class="md:flex flex-row h-full w-full">
+        <div className="md:h-60">
+          <div className="grid grid-cols-1 gap-8 md:flex flex-row h-full w-full">
             
-            <div class="md:basis-1/3 my-auto mx-10">
+            <div className="md: basis-1/3 my-auto mx-10">
               <a href="https://maps.app.goo.gl/RnNMXoTwPPzLKLRW7">
-                <div class="md:flex justify-center">
+                <div className="flex justify-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke-width="1.5"
                     stroke="currentColor"
-                    class="w-20 h-20"
+                    className="w-20 h-20"
                   >
                     <path
                       stroke-linecap="round"
@@ -40,21 +41,21 @@ export default function ReachUs() {
                     />
                   </svg>
                 </div>
-                <div class="md:flex justify-center text-2xl">Via Ferrarese 37, 44042, Cento FE</div>
+                <div className="flex justify-center text-2xl">Via Ferrarese 37, 44042, Cento FE</div>
               </a>
             </div>
             
 
-            <div class="md:basis-1/3 my-auto mx-10">
+            <div className="md: basis-1/3 my-auto mx-10">
               <a href="">
-                <div className="md:flex justify-center">
+                <div className="flex justify-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke-width="1.5"
                     stroke="currentColor"
-                    class="w-20 h-20"
+                    className="w-20 h-20"
                   >
                     <path
                       stroke-linecap="round"
@@ -63,20 +64,20 @@ export default function ReachUs() {
                     />
                   </svg>
                 </div>
-                <div class="md:flex justify-center text-2xl">+39 333 3333333</div>
+                <div className="flex justify-center text-2xl">+39 333 3333333</div>
               </a>
             </div>
 
-            <div class="md:basis-1/3 my-auto mx-10">
+            <div className="md: basis-1/3 my-auto mx-10">
               <a href="mailto:">
-                <div className="md:flex justify-center">
+                <div className="flex justify-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke-width="1.5"
                     stroke="currentColor"
-                    class="w-20 h-20"
+                    className="w-20 h-20"
                   >
                     <path
                       stroke-linecap="round"
@@ -85,19 +86,19 @@ export default function ReachUs() {
                     />
                   </svg>
                 </div>
-                <div class="md:flex justify-center text-2xl">mail@mail.com</div>
+                <div className="flex justify-center text-2xl">mail@mail.com</div>
               </a>
             </div>
 
           </div>
         </div>
       </div>
-      <div class="md: h-20" />
-      <div class="md:flex flex-row h-full">
-        <div class="md:basis-2/3 p-10">
+      <div className="md: h-20" />
+      <div className="h-full md:flex flex-row h-full">
+        <div className="h-96 md:basis-2/3 p-10">
           <Map />
         </div>
-        <div class="md:basis-1/3">
+        <div className="flex flex-row justify-around md:basis-1/3">
           <TimeTable />
         </div>
       </div>
