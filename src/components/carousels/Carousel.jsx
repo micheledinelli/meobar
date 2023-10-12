@@ -1,8 +1,10 @@
 import Meobar from "../../assets/meoBar.png";
+
 import hor1 from "../../assets/hor1.jpg";
 import hor2 from "../../assets/hor2.jpg";
 import hor3 from "../../assets/hor3.jpg";
 import hor4 from "../../assets/hor4.jpg";
+
 export default function Carousel() {
   const slideLeft = () => {
     var slider = document.getElementById("slider");
