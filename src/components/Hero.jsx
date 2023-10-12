@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Carousel from "./carousels/carousel";
+import CustomCarousel from "./carousels/CustomCarousel";
 
 export default function Hero() {
   const [isMobile, setIsMobile] = useState();
@@ -29,7 +29,7 @@ export default function Hero() {
           <img className="" src="" />
         </div>
       ) : (
-        <Carousel />
+        <CustomCarousel />
       )}
     </div>
   );

@@ -5,7 +5,7 @@ import hor2 from "../../assets/hor2.jpg";
 import hor3 from "../../assets/hor3.jpg";
 import hor4 from "../../assets/hor4.jpg";
 
-export default function Carousel() {
+export default function CustomCarousel() {
   const slideLeft = () => {
     var slider = document.getElementById("slider");
     slider.scrollLeft = slider.scrollLeft - window.innerWidth;
