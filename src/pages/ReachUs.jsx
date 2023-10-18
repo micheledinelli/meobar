@@ -99,20 +99,20 @@ export default function ReachUs() {
         <div className="h-screen w-screen md:flex md:flex-row md:overflow-hidden">
 
         
-          <div className="h-screen overflow-hidden z-0 md:h-full md:w-1/2">
+          <div className="h-screen overflow-hidden z-0 md:h-full md:w-1/2 p-10 bg-red-200">
             <Map />
           </div>  
   
-          <div className="grid grid-cols-1 gap-2 absolute bottom-10 right-5 z-10 md:relative md:grid-cols-2 md:grid-rows-3 md:h-full md:w-1/2 md:z-0 md:bottom-0 md:right-0 md:p-3">
+          <div className="grid grid-cols-1 gap-2 absolute bottom-10 right-5 z-10 md:relative md:grid-cols-3 md:grid-rows-3 md:h-1/2 md:w-1/2 md:z-0 md:bottom-0 md:right-0 md:p-3">
             {/* clock */}
-            <div className="bg-black rounded-full flex justify-center p-2 md:rounded-none md:row-span-1 md:py-20">
+            <div className="bg-black rounded-full flex justify-center p-2 md:rounded-none md:row-span-1">
               <svg 
                 xmlns="http://www.w3.org/2000/svg" 
                 fill="none" 
                 viewBox="0 0 24 24" 
                 stroke-width="1.5" 
                 stroke="currentColor" 
-                class="w-14 h-14 md:w-24 md:h-24"
+                class="w-14 h-14"
               >
                 <path 
                   stroke-linecap="round" 
@@ -122,7 +122,7 @@ export default function ReachUs() {
               </svg>
             </div>
             {/* pin */}
-            <div className="bg-black rounded-full flex justify-center p-2 md:rounded-none md:hover:bg-gray-400 md:hover:text-black md:row-span-1 md:py-20">
+            <div className="bg-black rounded-full flex justify-center p-2 md:hover:bg-gray-400 md:hover:text-black md:row-span-1">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -147,7 +147,7 @@ export default function ReachUs() {
               <TimeTable />
             </div>
             {/* telephone */}
-            <div className="bg-black rounded-full flex justify-center p-2 md:rounded-none md:hover:bg-gray-400 md:hover:text-black md:row-span-1 md:py-20">
+            <div className="bg-black rounded-full flex justify-center p-2 md:hover:bg-gray-400 md:hover:text-black md:row-span-1">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -164,7 +164,7 @@ export default function ReachUs() {
               </svg>
             </div>
             {/* mail */}
-            <div className="bg-black rounded-full flex justify-center p-2 md:rounded-none md:hover:bg-gray-400 md:hover:text-black md:row-span-1 md:py-20">
+            <div className="bg-black rounded-full flex justify-center p-2 md:hover:bg-gray-400 md:hover:text-black md:row-span-1">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
