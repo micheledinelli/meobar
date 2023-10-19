@@ -28,7 +28,7 @@ export default function Map() {
   }, [API_KEY, lng, lat, zoom]);
 
   return (
-    <div className="w-full h-full md:relative md:p-10">
+    <div className="w-full h-full md:relative md:p-10 md:h-calc(full-20)">
       <div ref={mapContainer} className=" w-full h-full md: relative" />
     </div>
   );
