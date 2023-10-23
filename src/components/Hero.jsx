@@ -23,14 +23,7 @@ export default function Hero() {
       <h1 className="font-bold  text-gray-200 bg-black/40 px-2 rounded-md md:text-9xl text-2xl z-50">
         Meo Bar
       </h1>
-      {/* <FlashingSvg /> */}
-      {isMobile ? (
-        <div>
-          <img className="" src="" />
-        </div>
-      ) : (
-        <CustomCarousel />
-      )}
+      {<CustomCarousel isMobile={isMobile} />}
     </div>
   );
 }

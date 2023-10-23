@@ -23,12 +23,8 @@ export default function Navbar() {
                 </div>
                 <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
                   {navData.pages.map((elem, i) => (
-                    // <a
-                    //   key={i}
-                    //   href={elem.path}
-                    //   className="inline-flex text-xl items-center border-b-2 border-transparent px-1 pt-1  font-medium text-gray-500 hover:border-gray-300 hover:text-gray-400"
-                    // >
                     <NavLink
+                      key={i}
                       className="inline-flex text-xl items-center border-b-2 border-transparent px-1 pt-1 font-medium text-gray-500 hover:border-gray-300 hover:text-gray-400"
                       to={elem.path}
                       style={({ isActive, isPending }) => {

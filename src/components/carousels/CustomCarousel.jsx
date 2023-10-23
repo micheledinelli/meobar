@@ -5,7 +5,12 @@ import hor2 from "../../assets/hor2.jpg";
 import hor3 from "../../assets/hor3.jpg";
 import hor4 from "../../assets/hor4.jpg";
 
-export default function CustomCarousel() {
+import ver1 from "../../assets/ver1.jpg";
+import ver2 from "../../assets/ver2.jpg";
+import ver3 from "../../assets/ver3.jpg";
+import ver4 from "../../assets/ver4.jpg";
+
+export default function CustomCarousel(props) {
   const slideLeft = () => {
     var slider = document.getElementById("slider");
     slider.scrollLeft = slider.scrollLeft - window.innerWidth;
@@ -54,15 +59,58 @@ export default function CustomCarousel() {
         id="slider"
         className="snap-x snap-mandatory w-screen h-screen overflow-hidden overflow-x-scroll no-scroll whitespace-nowrap scroll-smooth flex gap-4"
       >
-        <img
-          className="w-screen snap-center object-cover"
-          src={Meobar}
-          alt=""
-        />
-        <img className="w-screen snap-center object-cover" src={hor1} alt="" />
-        <img className="w-screen snap-center object-cover" src={hor2} alt="" />
-        <img className="w-screen snap-center object-cover" src={hor3} alt="" />
-        <img className="w-screen snap-center object-cover" src={hor4} alt="" />
+        {props.isMobile ? (
+          <>
+            <img
+              className="w-screen snap-center object-cover"
+              src={ver1}
+              alt=""
+            />
+            <img
+              className="w-screen snap-center object-cover"
+              src={ver2}
+              alt=""
+            />
+            <img
+              className="w-screen snap-center object-cover"
+              src={ver3}
+              alt=""
+            />
+            <img
+              className="w-screen snap-center object-cover"
+              src={ver4}
+              alt=""
+            />
+          </>
+        ) : (
+          <>
+            <img
+              className="w-screen snap-center object-cover"
+              src={Meobar}
+              alt=""
+            />
+            <img
+              className="w-screen snap-center object-cover"
+              src={hor1}
+              alt=""
+            />
+            <img
+              className="w-screen snap-center object-cover"
+              src={hor2}
+              alt=""
+            />
+            <img
+              className="w-screen snap-center object-cover"
+              src={hor3}
+              alt=""
+            />
+            <img
+              className="w-screen snap-center object-cover"
+              src={hor4}
+              alt=""
+            />
+          </>
+        )}
       </div>
     </div>
   );

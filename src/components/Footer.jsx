@@ -2,11 +2,6 @@ import React from "react";
 
 export default function Footer() {
   const navigation = {
-    main: [
-      { name: "About", href: "#" },
-
-      { name: "Contact us", href: "#" },
-    ],
     social: [
       {
         name: "Facebook",
@@ -42,13 +37,13 @@ export default function Footer() {
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
-            stroke-width="1.5"
+            strokeWidth="1.5"
             stroke="currentColor"
             className="w-6 h-6"
           >
             <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
             />
           </svg>
@@ -58,7 +53,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-transparent">
+    <footer className="bg-transparent sticky top-[100vh]">
       <div className="mx-auto max-w-7xl overflow-hidden px-6 py-8 sm:py-24 lg:px-8">
         <div className="mt-10 flex justify-center space-x-10">
           {navigation.social.map((item) => (

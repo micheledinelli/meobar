@@ -1,10 +1,5 @@
 import React from "react";
-import ver4 from "../../assets/verr4.jpg";
-import ver1 from "../../assets/verr4.jpg";
-import ver2 from "../../assets/verr4.jpg";
-import tapas1 from "../../assets/tapas1.jpg";
-import tapas2 from "../../assets/tapas2.jpg";
-import tapas3 from "../../assets/tapas3.jpg";
+import ver4 from "../../assets/ver4.jpg";
 import tapas4 from "../../assets/tapas4.jpg";
 
 export default function SectionCard({ title, description, image, link }) {

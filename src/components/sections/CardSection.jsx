@@ -5,7 +5,7 @@ export default function CardSection() {
     <div className="bg-zinc-900 gap-y-3 gap-4 pt-30 md:py-52 overflow-hidden">
       <div className="flex justify-center">
         <h1 className="text-5xl p-10">
-          <i>Try our specialties</i>
+          <p>Try our specialties</p>
         </h1>
       </div>
       <div className="">
