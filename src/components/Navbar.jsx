@@ -7,7 +7,7 @@ import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <Disclosure as="nav" className="bg-zinc-900 ">
+    <Disclosure as="nav" className="bg-chineseb">
       {({ open }) => (
         <>
           <div className="mx-auto  px-2 sm:px-6 lg:px-8">

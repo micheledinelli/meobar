@@ -53,7 +53,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-transparent sticky top-[100vh]">
+    <footer className="bg-black sticky top-[100vh]">
       <div className="mx-auto max-w-7xl overflow-hidden px-6 py-8 sm:py-24 lg:px-8">
         <div className="mt-10 flex justify-center space-x-10">
           {navigation.social.map((item) => (

@@ -6,7 +6,7 @@ import CardSection from "../components/sections/CardSection";
 
 const Home = () => {
   return (
-    <div className="bg-black no-scroll">
+    <div className="bg-chineseb no-scroll">
       <Navbar />
       <Hero />
       <CardSection />
