@@ -1,14 +1,26 @@
 import Meobar from "../../assets/meoBar.png";
 
-import hor1 from "../../assets/hor1.jpg";
-import hor2 from "../../assets/hor2.jpg";
-import hor3 from "../../assets/hor3.jpg";
-import hor4 from "../../assets/hor4.jpg";
+import hor1 from "../../assets/drinks-hor1.png";
+import hor2 from "../../assets/drinks-hor2.png";
+import hor3 from "../../assets/drinks-hor3.png";
+import hor4 from "../../assets/drinks-hor4.png";
+import hor5 from "../../assets/drinks-hor5.png";
+import hor6 from "../../assets/drinks-hor6.png";
 
-import ver1 from "../../assets/ver1.jpg";
-import ver2 from "../../assets/ver2.jpg";
-import ver3 from "../../assets/ver3.jpg";
-import ver4 from "../../assets/ver4.jpg";
+import ver1 from "../../assets/drinks-ver1.png";
+import ver2 from "../../assets/drinks-ver2.png";
+import ver3 from "../../assets/drinks-ver3.png";
+import ver4 from "../../assets/drinks-ver4.png";
+
+const horImages = [
+  { img: Meobar },
+  { img: hor1 },
+  { img: hor2 },
+  { img: hor3 },
+  { img: hor4 },
+  { img: hor5 },
+  { img: hor6 },
+];
 
 export default function CustomCarousel(props) {
   const slideLeft = () => {
@@ -84,31 +96,14 @@ export default function CustomCarousel(props) {
           </>
         ) : (
           <>
-            <img
-              className="w-screen snap-center object-cover"
-              src={Meobar}
-              alt=""
-            />
-            <img
-              className="w-screen snap-center object-cover"
-              src={hor1}
-              alt=""
-            />
-            <img
-              className="w-screen snap-center object-cover"
-              src={hor2}
-              alt=""
-            />
-            <img
-              className="w-screen snap-center object-cover"
-              src={hor3}
-              alt=""
-            />
-            <img
-              className="w-screen snap-center object-cover"
-              src={hor4}
-              alt=""
-            />
+            {horImages.map((elem, i) => (
+              <img
+                key={i}
+                className="w-screen snap-center object-cover"
+                src={elem.img}
+                alt={i}
+              />
+            ))}
           </>
         )}
       </div>

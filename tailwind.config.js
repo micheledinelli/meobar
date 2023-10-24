@@ -3,6 +3,7 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      display: ["group-hover"],
       colors: {
         chineseb: "#141414",
         antiflash: "#F3F3F3",

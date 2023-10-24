@@ -1,0 +1,103 @@
+{
+  "DRINKS": {
+    "SRI LANKA": {
+      "ingredients": [
+        "SANTERO",
+        "MYER'S",
+        "REMEDY PINEAPPLE",
+        "CANNELLA",
+        "SUCCO DI LIME",
+        "SODA ALL'ANANAS",
+        "ESSENTIA CHIODI DI GAROFANO"
+      ],
+      "price": 10
+    },
+    "ANATOLIA": {
+      "ingredients": [
+        "GIN INFUSO ALLIMONE",
+        "TALISKER SKY",
+        "SUCCO DI LIMONE",
+        "ZUCCHERO",
+        "ALBUME",
+        "CHERRY SODA"
+      ],
+      "price": 8
+    },
+    "GIAPPONE": {
+      "ingredients": [
+        "COGNAC",
+        "SUCCO DI LIMONE",
+        "ZUCCHERO",
+        "ANGOSTURA ORANGE",
+        "YUZU TONIC",
+        "ESSENTIA LEGNO DI CEDRO"
+      ],
+      "price": 12
+    },
+    "ANGERS": {
+      "ingredients": [
+        "AVERNA",
+        "VERMOUTH COCCHI",
+        "CAMPARI",
+        "KHALUA",
+        "GIN",
+        "COINTREAU",
+        "LIQUIRIZIA",
+        "ESSENTIA DI ARANCIA AMARA"
+      ],
+      "price": 9
+    },
+    "VENETO": {
+      "ingredients": [
+        "WILDTURKEY",
+        "BOURBON",
+        "SUCCO DI LIMONE",
+        "LATTE",
+        "ZUCCHERO",
+        "VALPOLICELLA CLASSICO SUPERIORE"
+      ],
+      "price": 10
+    },
+    "MESSICO": {
+      "ingredients": [
+        "TEQUILA",
+        "SHRUB AL POMPELMO ROSA",
+        "ACETO DI RISO",
+        "POLVERE DI OLIVE NERE",
+        "SODA AL POMPELMO ROSA"
+      ],
+      "price": 10
+    },
+    "NEW ORLEAN'S": {
+      "ingredients": [
+        "ITALICUS ROSOLIO DI BERGAMOTTO",
+        "CEDRATA TASSONI",
+        "PEYCHAUD'S BITTER"
+      ],
+      "price": 9
+    },
+    "VENEZUELA": {
+      "ingredients": [
+        "VERMOUTH COCCHI",
+        "ANGOSTURA ORANGE",
+        "CEDRATA TASSONI",
+        "ESSENTIA LIMONE"
+      ],
+      "price": 8
+    },
+    "BRASILE": {
+      "ingredients": [
+        "PUREA AL PASSION FRUIT",
+        "SUCCO DI LIMONE",
+        "YUZU TONIC"
+      ],
+      "price": 7,
+      "analcolico": true
+    },
+    "INGHILTERRA": {
+      "ingredients": ["SEEDLIPGARDEN108", "INDIAN TONICWATER"],
+      "price": 7,
+      "analcolico": true
+    }
+  }
+}

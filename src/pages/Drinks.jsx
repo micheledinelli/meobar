@@ -14,7 +14,7 @@ export default function Drinks() {
     <>
       <Navbar />
       <HeroDrinks />
-      <FloatingButton file={Wines} filename={"meobar-drinks"} />
+      {/* <FloatingButton file={Wines} filename={"meobar-drinks"} /> */}
       <Footer />
     </>
   );

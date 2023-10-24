@@ -16,110 +16,63 @@ body {
   width: 100vw;
 }
 
-.wm-hero {
-  --duration1: 2.5s;
-  --duration2: calc(var(--duration1) / 2);
-  --delay1: calc(var(--duration2) / 2);
-  --delay2: calc(var(--duration2) + var(--delay1));
-  --easing: cubic-bezier(0.65, 0.05, 0.36, 1);
+.fade-in {
+  margin-top: 25px;
+  font-size: 21px;
+  text-align: center;
+
+  -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 3s; /* Firefox < 16 */
+  -ms-animation: fadein 3s; /* Internet Explorer */
+  -o-animation: fadein 3s; /* Opera < 12.1 */
+  animation: fadein 3s;
 }
 
-.wm-hero h1 {
-  line-height: 1.2;
-  transform: translateY(3em);
-  -webkit-animation: loadH1 var(--duration1) var(--easing) var(--delay1)
-    forwards;
-  animation: loadH1 var(--duration1) var(--easing) var(--delay1) forwards;
-}
-.wm-hero img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  border-radius: 1em 1em 0 0;
-  transform: translateY(100%);
-  -webkit-animation: loadImg var(--duration2) var(--easing) var(--delay2)
-    forwards;
-  animation: loadImg var(--duration2) var(--easing) var(--delay2) forwards;
-}
-
-@-webkit-keyframes loadH1 {
-  0% {
+@keyframes fadein {
+  from {
     opacity: 0;
-    transform: translateY(3em);
   }
-  30%,
-  50% {
+  to {
     opacity: 1;
-    transform: translateY(3em);
-  }
-  100% {
-    opacity: 1;
-    transform: none;
   }
 }
 
-@keyframes loadH1 {
-  0% {
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from {
     opacity: 0;
-    transform: translateY(3em);
   }
-  30%,
-  50% {
+  to {
     opacity: 1;
-    transform: translateY(3em);
-  }
-  100% {
-    opacity: 1;
-    transform: none;
-  }
-}
-@-webkit-keyframes loadImg {
-  0% {
-    transform: translateY(100%);
-  }
-  100% {
-    transform: none;
-  }
-}
-@keyframes loadImg {
-  0% {
-    transform: translateY(100%);
-  }
-  100% {
-    transform: none;
   }
 }
 
-.myclass {
-  animation: expand 2s forwards;
-  -webkit-animation: expand 2s forwards;
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-@-webkit-keyframes expand {
-  0% {
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from {
+    opacity: 0;
   }
-  25% {
-    position: fixed;
-    bottom: 3rem;
-    right: 10rem;
-  }
-  100% {
-    position: fixed;
-    bottom: 0.75rem;
-    right: 3.5rem;
+  to {
+    opacity: 1;
   }
 }
-@keyframes expand {
-  0% {
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  from {
+    opacity: 0;
   }
-  25% {
-    position: fixed;
-    bottom: 3rem;
-    right: 10rem;
-  }
-  100% {
-    position: fixed;
-    bottom: 0.75rem;
-    right: 3.5rem;
+  to {
+    opacity: 1;
   }
 }

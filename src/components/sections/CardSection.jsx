@@ -1,12 +1,11 @@
 import React from "react";
-import SingleCardSection from "../cards/SingleCardSection";
 import Card from "../cards/Card";
-import Drink from "../../assets/ver3.jpg";
-import Tapas from "../../assets/tapas4.jpg";
+import Drink from "../../assets/drinks-ver3.png";
+import Tapas from "../../assets/tapas-hor4.png";
 
 export default function CardSection() {
   return (
-    <div className="my-20 mx-5 py-20 flex flex-col justify-evenly">
+    <div className="my-20 mx-5 flex flex-col justify-around">
       <div className="text-center">
         <h3 className="text-5xl text-chinesew">What you'll find</h3>
       </div>
