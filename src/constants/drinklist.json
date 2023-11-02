@@ -1,5 +1,5 @@
-{
-  "DRINKS": {
+[
+  {
     "SRI LANKA": {
       "ingredients": [
         "SANTERO",
@@ -11,7 +11,9 @@
         "ESSENTIA CHIODI DI GAROFANO"
       ],
       "price": 10
-    },
+    }
+  },
+  {
     "ANATOLIA": {
       "ingredients": [
         "GIN INFUSO ALLIMONE",
@@ -22,7 +24,9 @@
         "CHERRY SODA"
       ],
       "price": 8
-    },
+    }
+  },
+  {
     "GIAPPONE": {
       "ingredients": [
         "COGNAC",
@@ -33,7 +37,9 @@
         "ESSENTIA LEGNO DI CEDRO"
       ],
       "price": 12
-    },
+    }
+  },
+  {
     "ANGERS": {
       "ingredients": [
         "AVERNA",
@@ -46,7 +52,9 @@
         "ESSENTIA DI ARANCIA AMARA"
       ],
       "price": 9
-    },
+    }
+  },
+  {
     "VENETO": {
       "ingredients": [
         "WILDTURKEY",
@@ -57,7 +65,9 @@
         "VALPOLICELLA CLASSICO SUPERIORE"
       ],
       "price": 10
-    },
+    }
+  },
+  {
     "MESSICO": {
       "ingredients": [
         "TEQUILA",
@@ -67,7 +77,9 @@
         "SODA AL POMPELMO ROSA"
       ],
       "price": 10
-    },
+    }
+  },
+  {
     "NEW ORLEAN'S": {
       "ingredients": [
         "ITALICUS ROSOLIO DI BERGAMOTTO",
@@ -75,7 +87,9 @@
         "PEYCHAUD'S BITTER"
       ],
       "price": 9
-    },
+    }
+  },
+  {
     "VENEZUELA": {
       "ingredients": [
         "VERMOUTH COCCHI",
@@ -84,7 +98,9 @@
         "ESSENTIA LIMONE"
       ],
       "price": 8
-    },
+    }
+  },
+  {
     "BRASILE": {
       "ingredients": [
         "PUREA AL PASSION FRUIT",
@@ -93,11 +109,13 @@
       ],
       "price": 7,
       "analcolico": true
-    },
+    }
+  },
+  {
     "INGHILTERRA": {
       "ingredients": ["SEEDLIPGARDEN108", "INDIAN TONICWATER"],
       "price": 7,
       "analcolico": true
     }
   }
-}
+]
