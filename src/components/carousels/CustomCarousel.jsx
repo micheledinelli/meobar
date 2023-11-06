@@ -35,7 +35,7 @@ export default function CustomCarousel(props) {
     <div className="absolute">
       <div
         onClick={slideLeft}
-        className="bg-transparent h-full text-center flex items-center absolute px-10 transition-all duration-100 cursor-pointer"
+        className="bg-transparent z-50 h-full text-center flex items-center absolute px-10 transition-all duration-100 cursor-pointer"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -96,6 +96,7 @@ export default function CustomCarousel(props) {
           </>
         ) : (
           <>
+            <div className="absolute pb-24 md:bg-gradient-to-b md:from-black md:to-transparent bottom-0 left-0 bg-gradient-to-t from-black to-red-300 md:top-0 md:left-0 w-full z-30 h-[27rem]"></div>
             {horImages.map((elem, i) => (
               <img
                 key={i}

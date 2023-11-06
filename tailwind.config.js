@@ -9,7 +9,10 @@ export default {
         antiflash: "#F3F3F3",
         chinesew: "#E1E1E1",
       },
-      fontFamily: { sans: ["Bebas Neue", "sans-serif"] },
+      fontFamily: {
+        sans: ["Bebas Neue", "sans-serif"],
+        Poppins: ["Poppins", "sans-serif"],
+      },
     },
   },
   plugins: [],

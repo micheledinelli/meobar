@@ -19,10 +19,14 @@ export default function Hero() {
     };
   }, []);
   return (
-    <div className="flex justify-center flex-col items-center text-center h-screen relative overflow-hidden no-scroll bg-cover">
-      <h1 className="font-bold  text-gray-200 bg-black/40 px-2 rounded-md md:text-9xl text-2xl z-50">
+    <div className="flex md:justify-start justify-end max-h-screen flex-col items-center text-center h-screen relative overflow-hidden no-scroll bg-cover">
+      <div className="font-bold w-full text-gray-400 opacity-70 pb-20 absolute pt-10 z-50 rounded-md md:text-7xl text-4xl">
+        <div className="text-sm">cocktails & wines</div>
+        <div>Meo Bar</div>
+      </div>
+      {/* <h1 className="font-bold text-gray-400 bg-black/40 opacity-90 p-2 rounded-md md:text-9xl text-2xl z-50">
         Meo Bar
-      </h1>
+      </h1> */}
       {<CustomCarousel isMobile={isMobile} />}
     </div>
   );
