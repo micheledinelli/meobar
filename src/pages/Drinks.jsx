@@ -13,8 +13,10 @@ export default function Drinks() {
   return (
     <>
       <Navbar />
-      <HeroDrinks />
-      {/* <FloatingButton file={Wines} filename={"meobar-drinks"} /> */}
+      <div className="">
+        <HeroDrinks />
+        {/* <FloatingButton file={Wines} filename={"meobar-drinks"} /> */}
+      </div>
       <Footer />
     </>
   );
